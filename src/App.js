@@ -31,6 +31,10 @@ class App extends Component {
   componentDidMount() {
     const user = AuthService.getCurrentUser();
 
+    console.log("user =",user)
+
+    console.log("user.roles =",user?.roles)
+
     if (user) {
       this.setState({
         currentUser: user,
@@ -89,7 +93,7 @@ class App extends Component {
               </li>
             )}
 
-            {currentUser && (
+            currentUser{ && (
               <li className="nav-item">
                 <Link to={"/user"} className="nav-link">
                   User

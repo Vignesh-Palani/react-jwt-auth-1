@@ -146,7 +146,7 @@ export default class Login extends Component {
             />
           </Form>
         </div>
-      </div>
+      </div>  
     );
   }
 }
